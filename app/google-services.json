@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211686616522",
+    "project_id": "e-comerce-food",
+    "storage_bucket": "e-comerce-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211686616522:android:c90df023ea66dffe00b333",
+        "android_client_info": {
+          "package_name": "com.elmohandes.e_comercefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211686616522-aqksnr271fjgghcjna4in7f37qgli61k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwoVBEUInD9ZP59d4KovQrcIvqvTug-4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211686616522-aqksnr271fjgghcjna4in7f37qgli61k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

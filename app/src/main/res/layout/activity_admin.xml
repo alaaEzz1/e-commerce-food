@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_control_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="Control category"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_create_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="add Product"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_control_category"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_update_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="Update Product"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_create_product"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_create_control_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="Control With Offer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_update_product"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_show_users_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="show my users"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_create_control_offer"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_control_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="Control with Notification"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_show_users_details"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/admin_show_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_btn"
+                android:text="show Main Screen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/admin_control_notification"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

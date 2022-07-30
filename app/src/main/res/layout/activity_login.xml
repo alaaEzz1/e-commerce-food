@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resturant_3"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_txt_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Again!"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/login_txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome back you've \n been missed"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_hello"/>
+
+    
+    <EditText
+        android:id="@+id/login_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_welcome"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_15sdp"
+        android:textColor="@color/orange"
+        android:textColorHint="@color/orange"
+        android:textSize="@dimen/_18ssp" />
+
+
+    <EditText
+        android:id="@+id/login_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_input_email"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_15sdp"
+        android:textColor="@color/orange"
+        android:textColorHint="@color/orange"
+        android:textSize="@dimen/_18ssp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_btn"
+        android:padding="@dimen/_12sdp"
+        android:text="Login"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_input_password"/>
+
+    <TextView
+        android:id="@+id/login_txt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn_login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:background="@drawable/orange_btn"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_register"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddProductsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/add_product_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_product_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:civ_border_color="@color/orange"
+            app:civ_border_width="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_product_rv" />
+
+        <EditText
+            android:id="@+id/add_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/input_design"
+            android:gravity="center"
+            android:hint="Enter Product Title"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/orange"
+            app:layout_constraintTop_toBottomOf="@id/add_product_image" />
+
+        <LinearLayout
+            android:id="@+id/add_product_ln_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/add_product_title">
+
+            <Spinner
+                android:id="@+id/add_product_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/add_product_category_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_8sdp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_product_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/input_design"
+            android:gravity="center"
+            android:hint="Enter Description"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/orange"
+            app:layout_constraintTop_toBottomOf="@id/add_product_ln_cat" />
+
+        <EditText
+            android:id="@+id/add_product_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/input_design"
+            android:gravity="center"
+            android:hint="Enter price"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/orange"
+            app:layout_constraintTop_toBottomOf="@id/add_product_desc" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_product_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_btn"
+            android:text="save product"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/add_product_delete"
+            app:layout_constraintTop_toBottomOf="@id/add_product_fee"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"/>
+
+        <ImageView
+            android:id="@+id/add_product_delete"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_product_fee"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_product_show_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_btn"
+            android:text="Show products"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/add_product_save"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_product_show_make_best"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_btn"
+            android:text="make best seller"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/add_product_show_products"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_color">
+
+        <TextView
+            android:id="@+id/popular_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/popular_img"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@id/popular_txt_title"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/popular_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/popular_img">
+
+            <TextView
+                android:id="@+id/popular_txt_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LE "
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/popular_txt_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/popular_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/popular_linear"
+            android:background="@drawable/orange_btn"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="+ Add"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

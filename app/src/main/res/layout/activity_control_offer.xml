@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ControlOfferActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/offer_image"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:civ_border_color="@color/orange"
+        app:civ_border_width="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/offer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/input_design"
+        android:gravity="center"
+        android:hint="Enter short Title 30 char max"
+        android:maxLength="30"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/orange"
+        android:textColorHint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/offer_image" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/offer_start_date"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/orange_btn"
+        android:padding="@dimen/_8sdp"
+        android:text="Enter Start Date"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer_title" />
+
+    <TextView
+        android:id="@+id/offer_start_date_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/orange"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintStart_toEndOf="@id/offer_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer_title"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/offer_end_date"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/orange_btn"
+        android:padding="@dimen/_8sdp"
+        android:text="Enter End Date"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer_start_date" />
+
+    <TextView
+        android:id="@+id/offer_end_date_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/orange"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintStart_toEndOf="@id/offer_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offer_start_date"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/offer_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_btn"
+        android:text="save Offer"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/offer_end_date"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/offer_show_offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_btn"
+        android:text="Show Offer"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/offer_save"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
